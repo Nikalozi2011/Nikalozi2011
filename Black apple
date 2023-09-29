@@ -1,0 +1,32 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("blackapple", "DarkTheme")
+
+-- MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("Infiniteyield", "admin commands", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+MainSection:NewButton("Aimbot", "Auto head", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
+end)
+
+MainSection:NewButton("Vape", "Best roblox bedwars script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+
+MainSection:NewButton("Custom animation", "Everyone can see it", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+end)
+
+MainSection:NewButton("Owl hub", "Auto head", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+Section:NewKeybind("N", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
